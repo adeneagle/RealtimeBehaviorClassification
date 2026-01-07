@@ -1,0 +1,27 @@
+project_name: aeagle-yttri-lab
+run_name: test
+
+model:
+  num_classes: 10
+  d_model: 512
+  nhead: 8
+  num_layers: 3
+
+data:
+  train_percent: 0.7
+  val_percent: 0.15
+  test_percent: 0.15
+
+training:
+  batch_size: 32
+  lr: 1e-4
+  max_epochs: 300
+  image_size: 300
+  early_stopping_patience: 25
+
+data:
+  num_workers: 4
+  prefixes:
+  labels_path:
+  frames_path:
+
